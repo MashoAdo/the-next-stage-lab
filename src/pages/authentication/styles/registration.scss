@@ -5,7 +5,7 @@
 }
 
 .form-container {
-  padding: 30px 16px;
+  padding: 2rem 1rem;
   width: 90%;
   background-color: #ffffff;
   border-radius: 5px;
@@ -51,6 +51,8 @@
 }
 
 form {
+  display: flex;
+  flex-direction: column;
   margin-top: 30px;
 }
 
@@ -122,5 +124,23 @@ input {
     &:hover {
       color: rgb(12, 36, 64);
     }
+  }
+}
+
+// media screens
+@media screen and(min-width:768px) {
+  .form-container {
+    max-width: 657px;
+    padding: 3rem 1.5rem;
+  }
+
+  .google-signup-btn {
+    width: 50%;
+  }
+
+  .sign-up-btn {
+    max-width: 50%;
+    margin-bottom: 20px;
+    align-self: center;
   }
 }
