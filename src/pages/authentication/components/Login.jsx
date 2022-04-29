@@ -1,19 +1,24 @@
 import React from "react";
-import "../styles/Login.css";
+import loginStyles from "../styles/Login.module.css";
 
 function Login() {
   return (
-    <div className="form-container">
-      <div className="form-header">
+    <div className={loginStyles.formContainer}>
+      <div className={loginStyles.formHeader}>
         <h5>LOGIN</h5>
 
-        <a href="https://www.google.com/" className="google-signup-btn">
+        <a
+          href="https://www.google.com/"
+          className={loginStyles.googleSignUpBtn}
+        >
           Continue with Google
         </a>
 
-        <span className="or">or</span>
+        <span className={loginStyles.or}>or</span>
 
-        <span className="signUp-with-Details">Login with Details</span>
+        <span className={loginStyles.signUpWithDetails}>
+          Login with Details
+        </span>
       </div>
 
       <form action="/signup" method="post">
@@ -23,15 +28,16 @@ function Login() {
         <label htmlFor="password">Password</label>
         <input type="password" name="password" id="password" />
 
-        <a href="#" className="forgot-password">
+        <a href="#" className={loginStyles.forgotPassword}>
           Forgot Password?
         </a>
 
-        <button type="submit" className="sign-up-btn">
+        {/* similar class to sign up btn in registration component to reuse the css */}
+        <button type="submit" className={loginStyles.signUpBtn}>
           Login
         </button>
 
-        <div className="login-instead">
+        <div className={loginStyles.loginInstead}>
           <a href="/login">Dont't have any account? Sign Up instead</a>
         </div>
       </form>
