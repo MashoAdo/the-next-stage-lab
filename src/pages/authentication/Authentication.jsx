@@ -1,11 +1,13 @@
 import React from "react";
+import Login from "./components/Login";
 import Registration from "./components/Registration";
-import "./styles/authentication.css";
+import authStyles from "./styles/authentication.module.css";
 
 function Authentication() {
   return (
-    <div className="authentication-container">
+    <div className={authStyles.authenticationContainer}>
       <Registration />
+      {/* <Login /> */}
     </div>
   );
 }
