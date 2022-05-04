@@ -1,10 +1,10 @@
 import React from "react";
-import testimonialStyles from "./styles/partners.module.css";
+import partnersStyles from "./styles/partners.module.css";
 
 function Testimonial() {
   return (
-    <div className={testimonialStyles.testimonialWrapper}>
-      <div className={testimonialStyles.testimonial}>
+    <div className={partnersStyles.partnersWrapper}>
+      <div className={partnersStyles.partners}>
         <div>
           <h1>Trusted by Entrepreneurs and Hiring Managers globally</h1>
           <p>
@@ -12,7 +12,7 @@ function Testimonial() {
             perfect fit for their companies. That’s why companies love us
           </p>
         </div>
-        <div className={testimonialStyles.logoContainer}>
+        <div className={partnersStyles.logoContainer}>
           <img src={require("../../../../assets/mastercard.png")} alt="" />
           <img src={require("../../../../assets/pick&pay.png")} alt="" />
           <img src={require("../../../../assets/paypal.png")} alt="" />
